@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Two numbers</title>
+  </head>
+  <body>
+    <h1>Add Two numbers</h1>
+    <p id="value"></p>
+    <p id="area"></p>
+    <script>
+      const num1 = parseInt(prompt("enter your first number:"));
+
+      const num2 = parseInt(prompt("enter your second number:"));
+      const num3 = num1 + num2;
+      const Area = (num1 * num2) / 2;
+      document.getElementById("area").innerHTML = Area;
+      document.getElementById("value").innerHTML = num3;
+      console.log(`The number is ${num1} and ${num2} is : ${num3}`);
+    </script>
+  </body>
+</html>

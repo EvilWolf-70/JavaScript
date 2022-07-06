@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swaping</title>
+  </head>
+  <body>
+    <h1>Swaping</h1>
+    <h3>Answer:</h3>
+    <p>
+      The first element : <mark> <b id="first"></b></mark> The second element
+      <mark><b id="second"></b></mark>
+    </p>
+
+    <script>
+      let a = prompt("enter your first element:");
+
+      let b = prompt("enter second eleben is:");
+
+      let temp;
+      temp = a;
+      a = b;
+      b = temp;
+      document.getElementById("first").innerHTML = a;
+      document.getElementById("second").innerHTML = b;
+    </script>
+  </body>
+</html>
