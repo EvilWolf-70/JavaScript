@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: 0;
+}
+/* header part styles */
+a {
+  text-decoration: none;
+  color: black;
+}
+.nav-topbar * {
+  margin: 0;
+}
+
+.nav-topbar,
+.heading-wrapper-nav,
+#count-profile-wrapper,
+.order-count-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-topbar {
+  width: 100%;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px 8%;
+  z-index: 10;
+}
+#logo {
+  cursor: pointer;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 16px;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  border: none;
+}
+#logo span {
+  font-weight: 800;
+}
+#logo:hover span,
+.section-title-nav :hover {
+  color: #009688;
+  transform: scale(1.1);
+}
+.section-title-nav {
+  border: none;
+  background-color: white;
+  margin-left: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+#input-wrapper-nav {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+#input-wrapper-nav i {
+  position: absolute;
+  color: #999;
+  font-size: 18px;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+#input-wrapper-nav input {
+  width: 100%;
+  border: 1px solid rgb(245, 242, 242);
+  background-color: rgb(245, 242, 242);
+  box-sizing: border-box;
+  padding: 10px 24px 8px 48px;
+  color: black;
+}
+#count-profile-wrapper {
+  align-items: center;
+  justify-content: end;
+  display: inline-flex;
+}
+.order-count-wrapper {
+  position: relative;
+  margin-right: 32px;
+}
+.orders-count {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  background-color: #009688;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  right: -14px;
+}
+.order-count-wrapper i {
+  font-size: 18px;
+  cursor: pointer;
+}
+#profile-back-screen {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.555);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
