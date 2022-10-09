@@ -107,3 +107,64 @@ body {
 .right-col {
   padding: 20px;
 }
+.postsectionBody {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.postheader {
+  display: flex;
+  padding: 10px 0px 10px 10px;
+}
+.profilepic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.profilepic img {
+  width: 100%;
+  height: 100%;
+}
+.userName {
+  padding-left: 12px;
+  padding-top: 15px;
+}
+.userName p {
+  font-weight: 600;
+}
+.postpic img {
+  width: 100%;
+}
+.insta-icons {
+  padding: 10px 0px 10px 10px;
+}
+.insta-icons i {
+  font-size: 20px;
+  padding-right: 8px;
+}
+.fa-bookmark-o {
+  float: right;
+}
+.likeCount {
+  font-weight: 600;
+  padding-top: 15px;
+}
+.content {
+  padding: 0px 10px 10px 10px;
+}
+.name {
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.desc {
+  letter-spacing: 1px;
+}
+.commentBox {
+  width: 100%;
+  border: none;
+  padding: 15px 10px;
+  outline: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}

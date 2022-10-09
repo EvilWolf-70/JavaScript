@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+
+        #digi_clock {
+
+
+            color: limegreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 56px;
+            transform: translateX(-50%) translateY(-50%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="digi_clock" class="di_clock">
+
+    </div>
+
+    <script type="text/javascript">
+        function digital_clock() {
+            var date = new Date();
+            var HH = date.getHours();
+            var MM = date.getMinutes();
+            var SS = date.getSeconds();
+            var session = "AM"
+            if (HH == 0) {
+                HH = 12;
+
+            }
+            if (HH > 12) {
+                HH = HH - 12;
+                session = "PM";
+            }
+            // if (HH < 10) {
+            //     HH = "0" + HH;
+            // }
+            // if (MM < 10) {
+            //     MM = "0" + MM;
+            // }
+            // if (SS < 10) {
+            //     SS = "0" + SS;
+            // }
+            HH = (HH < 10) ? "0" + HH : HH;
+            MM = (MM < 10) ? "0" + MM : MM;
+            SS = (SS < 10) ? "0" + SS : SS;
+
+
+
+            // console.log(date);
+            // console.log(HH);
+            // console.log(MM);
+            // console.log(SS);
+            // console.log(session);
+            document.getElementById("digi_clock").innerHTML = HH + ":" + MM + ":" + SS + " " + session;
+            setTimeout(digital_clock, 1000)
+        }
+        digital_clock();
+    </script>
+</body>
+
+</html>
